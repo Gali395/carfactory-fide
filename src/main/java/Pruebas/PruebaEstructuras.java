@@ -1,4 +1,4 @@
-package pruebas;
+package Pruebas;
 
 import estructuras.ColaEnlazada;
 import estructuras.ListaEnlazada;
