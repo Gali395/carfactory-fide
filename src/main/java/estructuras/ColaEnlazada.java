@@ -60,12 +60,14 @@ public class ColaEnlazada<T> {
         return dato;
     }
 
-    /** Devuelve el elemento del frente sin retirarlo, o null si está vacía. */
+    /** Devuelve el elemento del frente sin retirarlo, o null si está vacía.
+     * @return  */
     public T frente() {
         return estaVacia() ? null : frente.getDato();
     }
 
-    /** Copia los elementos en su orden de salida, sin modificar la cola. */
+    /** Copia los elementos en su orden de salida, sin modificar la cola.
+     * @return  */
     public ListaEnlazada<T> comoLista() {
         ListaEnlazada<T> copia = new ListaEnlazada<>();
         NodoCola<T> actual = frente;
@@ -80,6 +82,7 @@ public class ColaEnlazada<T> {
      * Retira la primera ocurrencia del dato, conservando el orden del resto.
      * Usa una cola auxiliar para no alterar la secuencia FIFO.
      *
+     * @param dato
      * @return true si el elemento existía y fue retirado
      */
     public boolean retirar(T dato) {
@@ -102,7 +105,9 @@ public class ColaEnlazada<T> {
         return encontrado;
     }
 
-    /** Cantidad de ocurrencias del dato, sin modificar la cola. */
+    /** Cantidad de ocurrencias del dato, sin modificar la cola.
+     * @param dato
+     * @return  */
     public int contar(T dato) {
         int total = 0;
         NodoCola<T> actual = frente;
