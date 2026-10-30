@@ -1,9 +1,3 @@
-# Subir el proyecto a GitHub — CarFactory-Fide
-
-Guía paso a paso para crear el repositorio privado, subir el código y dejarlo listo para la
-revisión del profesor. Usuario: **Gali395** · Correo: **esanchez0395@gmail.com**.
-
----
 
 ## Paso 0 — Verificar que Git tiene tus datos
 
@@ -188,5 +182,3 @@ git rm -r --cached bin
 git commit -m "chore: excluye archivos compilados del repositorio"
 ```
 
-**El profesor no ve el repositorio** → falta aceptar la invitación de colaborador, o el repositorio
-quedó público/privado con otro usuario. Revisá Settings → Collaborators.
